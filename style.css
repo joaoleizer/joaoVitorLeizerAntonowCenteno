@@ -1,21 +1,25 @@
 /*Estilos gerais */
 * {
+    /*Aqui estou atribuindo margin, padding, box-sizing e font family padrão para todo o site*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 body {
+    /*Aqui para o body ocupar todo espaço da tela e com cor de fundo preto*/
     height: 100vh;
     background-color: #000000;
 }
 
 .interface {
+    /*Aqui colocando uma largura máxima de 1280px para cada section e um margin 0 em cima e em baixo e automatico nas laterais*/
     max-width: 1280px;
     margin: 0 auto;
 }
 
 .flex {
+    /*Aqui adicionado display flex as sections, para centralizar com mais facilidade os itens dentro das sections e adicionei um margin no top de 60px*/
     display: flex;
     margin-top: 60px;
 }
@@ -23,27 +27,32 @@ body {
 /*Estilos do header */
 
 .headerContainer {
+    /*Aqui foi adcionado um preenchimento*/
     padding: 40px 4%;
 }
 
 .headerContainer > .interface {
+    /*usando flex para separar os itens dentro do header*/
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .navigation a {
+    /*Trocando a cor e tirando decorações dos links*/
     color: #000000;
     text-decoration: none;
 }
 
 .navigation ol{
+    /*Tirando os numeros da lista usando flex e gap para dar um espaçamento entre os links*/
     list-style-type: none;
     display: flex;
     gap: 25px;
 }
 
 .navigation ol li {
+    /*Estilizando o estilo do botão*/
     padding: 10px 40px;
     font-weight: 700;
     background-color: #15F8FF;
@@ -52,117 +61,140 @@ body {
 }
 
 .navigation ol li:hover {
+    /*Utilizando a pseudo classe hover para mudar o estilo ao colocar o mouse em cima*/
     box-shadow: 0px 0px 8px #15f7ffb2;
     transform: scale(1.05);
 }
 
 /*Estilo about */  
 section.aboutMe {
+    /*Aqui foi adcionado um preenchimento*/
     padding: 40px 4%;
 }
 
 section.aboutMe .flex {
+    /*Alinhando os itens e espaçando usando gap*/
     align-items: center;
     gap: 60px;
 }
 
 .imgAbout img {
+    /*Arrendodando as bordas da imagem*/
     border-radius: 30px;
 }
 
 .aboutMe .txtAbout {
+    /*Mudando a cor dos textos para branco*/
     color: #fff;
 }
 
 .aboutMe .txtAbout h2 {
+    /*Estilizando os texto*/
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 30px;
 }
 
 .aboutMe .txtAbout span {
+    /*Mudando a cor do texto dentro do span*/
     color: #15F8FF;
     display: block;
 }
 
 .aboutMe .txtAbout p {
+    /*Dando um espaço entre os textos e justificando o texto*/
     margin: 20px 0;
     text-align: justify;
 }
 /*Estilo Formation */
 section.formation {
+    /*Aqui foi adcionado um preenchimento*/
     padding: 40px 4%;
 }
 
 section.formation .flex {
+    /*Alinhando os itens e dando um espaçamento*/
     align-items: center;
     gap: 150px;
 }
 
 .formation .txtFormation {
+    /*Mudando a cor dos textos*/
     color: #fff;
 }
 
 .formation .txtFormation h2{
+    /*Aumentanto a fonte e dando um margin em baixo*/
     font-size: 40px;
     margin-bottom: 30px;
 }
 
 .formation .txtFormation h2 span{
+    /*Mudando a cor do texto dentro do span*/
     color: #15F8FF;
 }
 
 .formation .txtFormation ol{
+    /*Dando um preenchimento a esquerda da lista*/
     padding-left: 25px;
 }
 
 .formation .txtFormation ol li {
+    /*Dando um margina em cima e em baixo da li*/
     margin: 10px 0;
 }
 .formation .txtFormation ol li span {
+    /*Mudando a cor dos textos dentro da span*/
     color: #15F8FF;
 }
 
 .formation .imgFormation img {
+    /*Arredondando a borda da imagem*/
     border-radius: 20px;
 }
 
 /* Estilo Portfólio */
 section.portfolio {
+    /*Aqui foi adcionado um preenchimento*/
     padding: 40px 4%;
 }
 
 section.portfolio .flex {
+    /*Alinhando os itens*/
     justify-content: space-around;
 }
 
 h2.title {
+    /*Estilizando a cor do titulo, tamanho e alinhamento*/
     color: #fff;
     font-size: 40px;
     text-align: center;
 }
 
 h2.title span {
+    /*Trocando a cor do texto dentro do span*/
     color: #15F8FF;
 }
 
 .imgSite {
+    /*Estilizando as imagens*/
     width: 360px;
     height: 460px;
     background-color: #15F8FF;  
     background-size: cover;
     background-position: 100% 0%;
     transition: 5s;
-    cursor: pointer;
     border-radius: 40px;
     position: relative;
 }
 
 .imgSite:hover {
+    /*Utilizando a pseudo classe hover para mudar o estilo ao colocar o mouse em cima*/
     background-position: 100% 100%;
 }
 
 .overlay {
+    /*Estilizando a sobreposição que vai ficar em cima da imagem ao colocar o mouse em cima*/
     position: absolute;
     top: 0;
     left: 0;
@@ -180,15 +212,18 @@ h2.title span {
     transition: 0.5s;
 }
 .overlay:hover {
+    /*Utilizando a pseudo classe hover para mudar o estilo ao colocar o mouse em cima*/
     opacity: 1;
 }
 
 /*Estilo contato */
 section.contact {
+    /*Aqui foi adcionado um preenchimento*/
     padding: 80px 4%;
 }
 
 form {
+    /*Estilizando o formulario*/
     max-width: 500px;
     margin: 0 auto;
     display: flex;
@@ -199,6 +234,7 @@ form {
 }
 
 form input, form textarea {
+    /*Estilizando o textarea e os inputs*/
     width: 100%;
     background-color: #313131;
     border: 0;
@@ -210,15 +246,18 @@ form input, form textarea {
 }
 
 form textarea {
+    /*Para que o text area não possa ter seu tamanho alterado*/
     resize: none;
 }
 
 form .btnSubmit {
+    /*dando um margin em cima e alinhando o texto do botão*/
     margin-top: 20px;
     text-align: center;
 }
 
 form .btnSubmit input {
+    /*Estilizando o botão*/
     width: 120px;
     background-color: #15F8FF;
     color: #000000;
@@ -228,12 +267,14 @@ form .btnSubmit input {
 }
 
 form .btnSubmit input:hover {
+    /*Utilizando a pseudo classe hover para mudar o estilo ao colocar o mouse em cima*/
     box-shadow: 0px 0px 8px #15F8FF;
     scale: 1.05;
 }
 
 /*Estilo footer */
 footer {
+    /*Estilizando e alinhando o footer*/
     padding: 40px 4%;
     display: flex;
     flex-direction: column;
@@ -241,10 +282,12 @@ footer {
 }
 
 hr {
+    /*Alterando a largura da linha*/
     width: 400px;
 }
 
 footer h3 {
+    /*Estilizando o testo*/
     color: #15F8FF;
     margin-top: 40px;
 }
